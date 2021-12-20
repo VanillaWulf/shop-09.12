@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <title>Register</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrp">
+          <div class="header__nav-group">
+            <img src="img/logo.svg" alt="loop" class="header_logo" />
+            <a href="#"
+              ><img src="img/loop.svg" alt="loop" class="header__link"
+            /></a>
+          </div>
+          <div>
+            <button class="header__button">
+              <svg
+                class="icon"
+                width="32"
+                height="23"
+                viewBox="0 0 32 23"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 23V20.31H32V23H0ZM0 12.76V10.07H32V12.76H0ZM0 2.69V0H32V2.69H0Z"
+                  fill="#E8E8E8"
+                />
+              </svg>
+            </button>
+            <a href="#"
+              ><img src="img/profile.svg" alt="profile" class="header__link"
+            /></a>
+            <a href="#"
+              ><img src="img/baggage.svg" alt="baggage" class="header__link"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="registration">
+        <div class="container">
+          <p class="registration-text">registration</p>
+        </div>
+      </section>
+      <section class="authorising">
+        <div class="container">
+          <form>
+            <fieldset>
+              <legend class="authorising__title_name">Your Name</legend>
+              <label>
+                <input
+                  type="text"
+                  class="authorising__input"
+                  id="first-name"
+                  placeholder="First Name"
+                  required
+                />
+              </label>
+              <label>
+                <input
+                  type="text"
+                  class="authorising__input"
+                  id="last-name"
+                  placeholder="Last Name"
+                  required
+                />
+              </label>
+            </fieldset>
+            <fieldset>
+              <legend class="authorising__title_login">
+                Login Details
+              </legend>
+              <label>
+                <input
+                  type="text"
+                  class="authorising__input"
+                  id="email"
+                  placeholder="Email"
+                  required
+                />
+              </label>
+              <label>
+                <input
+                  type="text"
+                  class="authorising__input"
+                  id="password"
+                  placeholder="Password"
+                  required
+                />
+              </label>
+            </fieldset>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
