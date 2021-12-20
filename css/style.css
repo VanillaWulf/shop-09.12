@@ -1,111 +1,195 @@
-:root {
-    --black: #222222;
-    --pink-bkg: #F1E4E6;
-    --pink-text: #F1808F;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
 }
 
 body {
-    font-family: 'Lato';
-    font-weight: 400;
-    font-style: normal;
-    font-size: 14px;
-    line-height: 17px;
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Lato";
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 .container {
-    width: 1140px;
-    margin: 0 auto;
+  width: 1140px;
+  margin: 0 auto;
 }
 
 .header {
-    background-color: var(--black);
+  background-color: #222222;
 }
-
-.header__logo {
-    margin: 0 41px 0 0;
+.header .header__logo {
+  margin: 0 41px 0 0;
 }
-
-.header__button {
-    background-color: transparent;
-    border: 0;
+.header .header__search {
+  position: relative;
 }
-
-.header__link {
-    margin: 0 0 0 33px;
+.header .header__wrp-logo-form {
+  display: flex;
 }
-
-.header__wrp {
-    display: flex;
-    justify-content: space-between;
-    min-height: 75px;
-    align-items: center;
+.header .header__search-input {
+  background: transparent;
 }
-
-.header__menu {
-    display: none;
+.header .header__search-input:hover {
+  outline: 1px solid red;
+}
+.header .header__search:before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: red;
+  top: 13px;
+  left: 7px;
+  background-image: url("../../img/loupe.svg");
+  background-size: 10px 10px;
+}
+.header .header__search-input {
+  padding: 10px 20px;
+  border: none;
+  outline: 1px solid black;
+}
+.header .header__button {
+  background-color: transparent;
+  border: 0;
+}
+.header .header__link {
+  margin: 0 0 0 33px;
+}
+.header .header__wrp {
+  display: flex;
+  justify-content: space-between;
+  min-height: 75px;
+  align-items: center;
+}
+.header .header__menu {
+  display: none;
+}
+.header .header__link--basket {
+  position: relative;
+}
+.header .header__link-basket-count {
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  background-color: #F1808F;
+  content: "";
+  color: white;
+  border-radius: 50%;
+  top: -10px;
+  right: -10px;
 }
 
 .brand {
-    display: flex;
-    margin: 0 0 63px;
+  display: flex;
+  margin: 0 0 63px;
 }
 
 .brand__title-wrp {
-    display: flex;
-    align-items: center;
-    padding: 0 0 0 92px;
-    background-color: var(--pink-bkg);
-    flex-grow: 1;
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 92px;
+  background-color: #F1E4E6;
+  flex-grow: 1;
 }
 
 .brand__title {
-    font-size: 48px;
-    font-weight: 900;
-    line-height: 58px;
-    color: var(--black);
-    text-transform: uppercase;
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: 900;
+  font-style: normal;
+  color: #222222;
+  text-transform: uppercase;
 }
 
 .brand__sub-title {
-    display: block;
-    font-size: 32px;
-    line-height: 38px;
+  display: block;
+  font-size: 32px;
+  line-height: 38px;
 }
 
 .brand__sub-title-pink {
-    color: var(--pink-text)
+  color: #F1808F;
 }
 
 .sales__item {
-    width: 360px;
-    min-height: 260px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 360px;
+  min-height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
 .sales__list {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
-
 .sales__item--woman {
-    background-image: url('../img/sales-woman.jpg');
+  background-image: url("../img/sales-woman.jpg");
+}
+.sales__item--shoes {
+  width: 100%;
 }
 
-.sales__item--shoes {
-    width: 100%;
-}
+/*# sourceMappingURL=style.css.map */
