@@ -192,4 +192,19 @@ body {
   width: 100%;
 }
 
+.products__item-button {
+  background-color: black;
+  color: white;
+  width: 138px;
+  min-height: 43px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.products__item-button-icon {
+  fill: white;
+  margin: 0 14px 0 0;
+}
+
 /*# sourceMappingURL=style.css.map */
