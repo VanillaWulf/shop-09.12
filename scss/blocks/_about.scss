@@ -1,0 +1,42 @@
+.about {
+    background-color: #222224;
+  }
+  
+  .about__list {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 103px;
+    padding-bottom: 104px;
+  }
+  
+  .about__list-header,
+  .about__list-header_percent,
+  .about__list-header_crown,
+  .about__list-header_truck {
+    font-size: 19.96px;
+    line-height: 24px;
+    color: #fbfbfb;
+    margin-bottom: 16px;
+  }
+  
+  .about__list-center {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .about__list-header_percent {
+    margin-top: 20px;
+  }
+  
+  .about__list-header_crown {
+    margin-top: 25px;
+  }
+  
+  .about__list-header_truck {
+    margin-top: 28px;
+  }
+  
+  .about__list-text {
+    color: #fbfbfb;
+    text-align: center;
+  }

@@ -1,0 +1,66 @@
+.authorising__title_login{
+    font-family: Lato;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.auth_wrp{
+    display: flex;
+    justify-content: column;
+}
+
+.auth-main-wrp{
+    display: flex;
+    justify-content: space-between;
+}
+.authorising__title_name{
+    font-family: Lato;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+    margin-bottom: 20px;
+    padding-top:64px;
+}
+
+.authorising__input{
+    width: 360px;
+    height: 45px;
+    margin-bottom: 20px;
+    border: 1px solid #A4A4A4;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1 ;
+}
+
+.authorising__warning{
+  font-family: Lato;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+  width: 360px;
+}
+
+.authorising__button{
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    background-color: #F16D7F;
+    border: 0;
+    padding-top: 16px;
+    padding-right: 28px;
+    padding-bottom: 17px;
+    padding-left: 26px;
+    margin-top: 39px;
+    margin-bottom: 96px;
+}
+
+.authorising__button-text{
+    margin-right: 20px;
+}
