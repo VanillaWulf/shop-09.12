@@ -77,6 +77,16 @@ body {
   margin: 0 auto;
 }
 
+@media (max-width: 1599px) {
+  .container {
+    width: 92%;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    width: 91%;
+  }
+}
 .header {
   background-color: #222222;
 }
@@ -142,6 +152,11 @@ body {
   right: -10px;
 }
 
+@media (max-width: 767px) {
+  .header__link {
+    display: none;
+  }
+}
 .brand {
   display: flex;
   margin: 0 0 63px;
@@ -156,10 +171,10 @@ body {
 }
 
 .brand__title {
-  font-size: 48px;
-  line-height: 58px;
-  font-weight: 900;
-  font-style: normal;
+  font-size: 22px;
+  line-height: 60px;
+  font-weight: 400;
+  font-style: 900;
   color: #222222;
   text-transform: uppercase;
 }
@@ -174,22 +189,88 @@ body {
   color: #F1808F;
 }
 
+@media (max-width: 1599px) {
+  .brand__img {
+    width: 50%;
+    height: 368px;
+    object-fit: cover;
+  }
+
+  .brand__title-wrp {
+    width: 50%;
+    min-height: 368px;
+  }
+
+  .brand__title {
+    font-size: 44px;
+    line-height: 53px;
+    font-weight: 900;
+    font-style: normal;
+  }
+
+  .brand__sub-title {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 700;
+    font-style: normal;
+  }
+}
+@media (max-width: 767px) {
+  .brand__img {
+    display: none;
+  }
+
+  .brand__title {
+    font-size: 38px;
+    line-height: 46px;
+    font-weight: 900;
+    font-style: normal;
+  }
+
+  .brand__sub-title {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    font-style: normal;
+  }
+}
 .sales__item {
   width: 360px;
   min-height: 260px;
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width: 1599px) {
+  .sales__item {
+    width: 33%;
+    min-height: 168px;
+  }
+}
+@media (max-width: 767px) {
+  .sales__item {
+    width: 100%;
+    min-height: 247px;
+  }
 }
 .sales__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .sales__item--woman {
   background-image: url("../img/sales-woman.jpg");
 }
 .sales__item--shoes {
   width: 100%;
+}
+@media (max-width: 1599px) {
+  .sales__item--shoes {
+    min-height: 116px;
+  }
 }
 
 .products__item-button {

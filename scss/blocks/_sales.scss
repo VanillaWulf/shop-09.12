@@ -6,11 +6,29 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        border: 1px solid;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        @include tablet {
+            width: 33%;
+            min-height: 168px;
+        }
+
+        @include mobile {
+            width: 100%;
+            min-height: 247px;
+        }
     }
     
     &__list {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
+
+        // @include mobile {
+        //     flex-direction: column;
+        // }
     }
     
     &__item--woman {
@@ -19,5 +37,9 @@
     
     &__item--shoes {
         width: 100%;
+
+        @include tablet {
+            min-height: 116px;;
+        }
     }
 }
