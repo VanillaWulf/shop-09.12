@@ -1,0 +1,12 @@
+.products__item-button {
+    background-color: black;
+    color: white;
+    width: 138px;
+    min-height: 43px;
+    @include flex-center;
+}
+
+.products__item-button-icon {
+    fill: white;
+    margin: 0 14px 0 0;
+}

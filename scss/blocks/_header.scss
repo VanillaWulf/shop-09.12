@@ -1,0 +1,83 @@
+.header {
+    background-color: $black;
+
+    .header__logo {
+        margin: 0 41px 0 0;
+    }
+
+    .header__search {
+        position: relative;
+    }
+
+    .header__wrp-logo-form {
+        display: flex;
+    }
+
+    .header__search-input {
+        background: transparent;
+    }
+
+    .header__search-input:hover {
+        outline: 1px solid red;
+    }
+
+    .header__search:before {
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background: red;
+        top: 13px;
+        left: 7px;
+        background-image: url('../../img/loupe.svg');
+        background-size: 10px 10px;
+    }
+
+    .header__search-input {
+        padding: 10px 20px;
+        border: none;
+        outline: 1px solid black;
+    }
+
+    .header__button {
+        background-color: transparent;
+        border: 0;
+    }
+
+    .header__link {
+        margin: 0 0 0 33px;
+    }
+
+    .header__wrp {
+        display: flex;
+        justify-content: space-between;
+        min-height: 75px;
+        align-items: center;
+    }
+
+    .header__menu {
+        display: none;
+    }
+
+    .header__link--basket {
+        position: relative;
+    }
+
+    .header__link-basket-count {
+        position: absolute;
+        width: 19px;
+        height: 19px;
+        background-color: #F1808F;
+        content: "";
+        color: white;
+        border-radius: 50%;
+        top: -10px;
+        right: -10px;
+    }
+}
+
+@media (max-width: $mobile-width) {
+    .header__link {
+        display: none;
+    }
+}
